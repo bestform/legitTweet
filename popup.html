@@ -1,0 +1,26 @@
+<style>
+    body {
+        overflow: hidden;
+        margin: 4px;
+        padding: 4px;
+        background: white;
+    }
+
+    div {
+        cursor: pointer;
+        text-align: center;
+        padding: 1px 3px;
+        font-family: sans-serif;
+        font-size: 0.8em;
+        width: 150px;
+        margin: 5px;
+        background: #ffffff;
+    }
+</style>
+<script>
+    function gotobreak() {
+        chrome.tabs.executeScript(null, {code:'scrollToLastUnread();'});
+        window.close();
+    }
+</script>
+<div onclick="gotobreak();">Scroll to oldest unread</div>

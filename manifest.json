@@ -1,0 +1,27 @@
+{
+    "name": "legitTweet",
+    "version": "0.1",
+    "description": "Convenient Twitter Button that does awesome stuff",
+    "background_page": "background.html",
+    "page_action" :
+    {
+        "default_icon" : "t.png",
+        "default_title" : "legitTweet"  ,
+        "popup": "popup.html"
+    },
+    "permissions" : [
+        "tabs",
+        "https://twitter.com/"
+    ],
+    "icons" : {
+        "48" : "t.png",
+        "128" : "t.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-inline",
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "js": ["jquery1.7.1.js", "content.js"]
+        }
+    ]
+}
