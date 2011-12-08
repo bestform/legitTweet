@@ -1,4 +1,4 @@
 legitTweet
 ==========
 
-![legitTweet](http://dl.dropbox.com/u/1850262/legitTweet.png "legitTweet")
+![legitTweet](https://github.com/bestform/legitTweet/raw/master/legitTweet.png "legitTweet")
